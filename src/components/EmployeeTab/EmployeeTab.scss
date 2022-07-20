@@ -5,6 +5,7 @@
     .tickets{
         height: 100vh;
         margin: 20px;
+
         .all-tickets{
             width: 100%;
             flex: 1;
@@ -14,7 +15,7 @@
             justify-content: center;
     
             .ticket{
-                background-color: #397754;
+                background-color: #f0a3bc;
                 display: block;
                 width: 200px;
                 height: 300px;
@@ -22,15 +23,28 @@
                 margin-left: 0;
                 flex-shrink: 0;
                 border-radius: 15px;
+                border: 0.125em solid #1A1A1A;
                 box-shadow: 0px 10px 20px rgba(black, 0.25);
                 font-size: auto;
-                color: #70be51;
+                color: #397754;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
 
                 button {
                     background-color: transparent;
                     border: 0.125em solid #1A1A1A;
                     border-radius: 0.9375em;
                     cursor: pointer;
+                    width: 30%;
+                    height: 10%;
+                    font-size: 20px;
+                }
+
+                .label{
+                    color: #1A1A1A;
                 }
             }
             

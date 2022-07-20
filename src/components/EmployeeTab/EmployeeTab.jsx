@@ -23,10 +23,10 @@ const EmployeeTab = ({employeeName, employeeRole}) => {
 
   return(
     <div className="ticket">
-      <div>Name: {employeeName}</div>
-      <div>Role: {employeeRole}</div>
+      <div> <span className="label">Name: </span> {employeeName}</div>
+      <div><span className="label">Role: </span> {employeeRole}</div>
       <button onClick={handleDecrement}>-</button>
-      <div>Tickets: {counter}</div>
+      <div><span className="label">Tickets: </span> {counter}</div>
       <button onClick={handleIncrement}>+</button>
     </div>
   );
