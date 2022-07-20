@@ -9,7 +9,7 @@ const EmployeeTab = ({employeeName, employeeRole}) => {
   const [counter, setCounter] = useState(0);
 
   const handleDecrement = () => {
-    if(counter==0) {
+    if(counter===0) {
       return;
     }
     else{
@@ -25,17 +25,9 @@ const EmployeeTab = ({employeeName, employeeRole}) => {
     <div className="ticket">
       <div>Name: {employeeName}</div>
       <div>Role: {employeeRole}</div>
-      <img
-        src={leftArrow}
-        onClick={handleDecrement}
-        alt=""
-      />
+      <button onClick={handleDecrement}>-</button>
       <div>Tickets: {counter}</div>
-      <img
-        src={rightArrow}
-        onClick={handleIncrement}
-        alt=""
-      />
+      <button onClick={handleIncrement}>+</button>
     </div>
   );
 };

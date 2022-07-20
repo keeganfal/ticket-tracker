@@ -1,20 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 .App{
-    .all-tickets{
-        display: flex;
-        flex-direction: column;
-        .ticket{
-            border: 2px solid black;
+    font-family: 'Roboto', sans-serif;
+    
+    .tickets{
+        height: 100vh;
+        margin: 20px;
+        .all-tickets{
+            width: 100%;
+            flex: 1;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            img {
-                box-shadow: 0px 10px 20px rgba(black, 0.25);
+            overflow-x: auto;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+            .ticket{
+                background-color: #397754;
                 display: block;
-                width: 5vw;
+                width: 200px;
+                height: 300px;
+                margin: 10px 20px;
+                margin-left: 0;
+                flex-shrink: 0;
                 border-radius: 15px;
-                margin: 0 10px;
+                box-shadow: 0px 10px 20px rgba(black, 0.25);
+                font-size: auto;
+                color: #70be51;
+
+                button {
+                    background-color: transparent;
+                    border: 0.125em solid #1A1A1A;
+                    border-radius: 0.9375em;
+                    cursor: pointer;
+                }
             }
+            
+
         }
     }
 }

@@ -12,10 +12,13 @@ const App = () => {
 
   return (
     <div className="App">
+      <section className='tickets'>
         <h2 className="tickets__heading">Tickets</h2>
         <div className="all-tickets">
           {cardListJSX}
         </div>
+      </section>
+        
     </div>
   );
 }

@@ -1,17 +1,35 @@
-.App .all-tickets {
-  display: flex;
-  flex-direction: column;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+.App {
+  font-family: "Roboto", sans-serif;
 }
-.App .all-tickets .ticket {
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.App .tickets {
+  height: 100vh;
+  margin: 20px;
 }
-.App .all-tickets .ticket img {
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+.App .tickets .all-tickets {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.App .tickets .all-tickets .ticket {
+  background-color: #397754;
   display: block;
-  width: 5vw;
+  width: 200px;
+  height: 300px;
+  margin: 10px 20px;
+  margin-left: 0;
+  flex-shrink: 0;
   border-radius: 15px;
-  margin: 0 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  font-size: auto;
+  color: #70be51;
+}
+.App .tickets .all-tickets .ticket button {
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
+  cursor: pointer;
 }
